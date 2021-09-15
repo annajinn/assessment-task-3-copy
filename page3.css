@@ -16,10 +16,13 @@
                         "q5 q5"
                         "ans5 ans5"
                         "openinghours openinghours"
+                        "hourstable hourstable"
                         "sponserheader sponserheader"
                         "sponserimg sponserimg"
                         "sponsertext sponsertext"
                         "sponser sponser"
+                        "delivery delivery"
+                        "deliverytable deliverytable"
                         "sponser2 sponser2"
                         "up up"
                         "footer footer"
@@ -109,15 +112,21 @@
         display: none;
     }
 
+    /* styling for the first body of the page */
+
     .ourcontact {
         grid-area: ourcontact;
     }
+
+    /* the faq title */
 
     .faq {
         grid-area: faq;
         margin-left: 10vw;
         margin-right: 10vw;
     }
+
+    /* styling for all the faq questions and answers */
 
     .q1 {
         grid-area: q1;
@@ -187,7 +196,7 @@
     }
 
     .q2:hover {
-        background-color: var(--brown5);
+        background-color: var(--brown2);
     }
 
     .q2:hover + .ans2 {
@@ -280,7 +289,7 @@
     }
 
     .q4:hover {
-        background-color: var(--brown5);
+        background-color: var(--brown2);
     }
 
     .q4:hover + .ans4 {
@@ -355,16 +364,57 @@
         display: block;
     }
 
-
-
-
-
-
-
+    /* the styling for the opening hours */
 
     .openinghours {
         grid-area: openinghours;
+        margin: 8vw;
+        margin-bottom: 0;
     }
+
+    .hourstable {
+        grid-area: hourstable;
+        border-collapse: collapse;
+        width: 80vw;
+        margin: 10vw;
+        margin-top: 0;
+    }
+
+    .hourstable th,td {
+        text-align: center;
+        padding: 8px;
+        border-color: var(--brown2);
+        border-width: thin;
+        border-style: solid;
+    }
+
+    .hourstable tr:nth-child(even) {
+        background-color: var(--brown5);
+    }
+
+    .hourstable th {
+        background-color: var(--brown3);
+        color: var(--brown1);    
+    }
+
+    .hourstable tr {
+        transition: 0.5s;
+    }
+
+    .hourstable tr:hover {
+        background-color: var(--brown2);
+    }
+
+    .hourstable th {
+        transition: 0.5s;
+    }
+
+    .hourstable th:hover {
+        background-color: var(--brown2);
+        color: var(--brown3);
+    }
+
+    /* styling for the sponsor */
 
     .sponserheader {
         grid-area: sponserheader;
@@ -411,9 +461,62 @@
         font-size: 20px;
         background-color: var(--brown2);
         list-style: circle;
-        padding-top: 7vh;
-        padding-bottom: 7vh;
+        padding: 7vh;
     }
+
+    /* styling for the delivery information */
+
+    .delivery {
+        grid-area: delivery;
+        list-style: circle;
+        margin: 8vw;
+        margin-bottom: 3vw;
+    }
+
+    .deliverytable {
+        grid-area: deliverytable;
+        border-collapse: collapse;
+        width: 80vw;
+        margin: 10vw;
+        margin-top: 0;
+    }
+
+    .deliverytable th,td {
+        text-align: center;
+        padding: 8px;
+        border-color: var(--brown2);
+        border-width: thin;
+        border-style: solid;
+    }
+
+    .deliverytable tr:nth-child(even) {
+        background-color: var(--brown5);
+    }
+
+    .deliverytable th {
+        background-color: var(--brown3);
+        color: var(--brown1);    
+    }
+
+    .deliverytable tr {
+        transition: 0.5s;
+    }
+
+    .deliverytable tr:hover {
+        background-color: var(--brown2);
+    }
+
+    .deliverytable th {
+        transition: 0.5s;
+    }
+
+    .deliverytable th:hover {
+        background-color: var(--brown2);
+        color: var(--brown3);
+    }
+
+
+    /* styling for the anna news sponsor */
   
     .sponser2 {
         grid-area: sponser2;
@@ -437,6 +540,14 @@
   
     .sponser2 img:hover {
         transform: scale(1.06);
+    }
+
+    .sponser2 h4:hover {
+        transform: scale(1.1);
+    }
+
+    .sponser2 h4 {
+        transition: 0.8s;
     }
   
     /* code for the back to top button */
@@ -468,6 +579,8 @@
         display: flex;
         justify-content: space-evenly;
     }
+
+    /* styling for the copyright section at the footer */
   
     .copyright {
         grid-area: copyright;
