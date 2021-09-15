@@ -1,0 +1,532 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: "nav nav"
+                        "ourbingsu ourbingsu"
+                        "ingredients ingredients"
+                        "bingsub bingsub"
+                        "bingsu1 bingsu2"
+                        "bingsu3 bingsu4"
+                        "bingsu5 bingsu6"
+                        "up up"
+                        "footer footer"
+                        "options options"
+                        "copyright copyright";
+ }
+  
+ :root {
+    --brown1 : #EEE2D5;
+    --brown2 : #C4B5A6;
+    --brown3 : #847564;
+    --brown4 : #554939;
+   }
+  
+    body {
+        background-color: var(--brown1);
+        margin: 0px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 40px;
+        font-size: larger;
+        text-align: center;
+        color: var(--brown4);
+    }
+  
+    /* styling for the header of the home page */
+    .header {
+        grid-area: nav;
+        width: 100vw;
+        font-weight: 300;
+        padding-bottom: 30px;
+        position: absolute;
+    }
+  
+    .header img {
+        float: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+  
+    /* styling for the navigation bar in the header */
+    .header nav {
+        display: flex;
+        justify-content: space-evenly;
+        float: inline-start;
+        list-style: none;
+        color: var(--brown4);
+        padding-right: 10vw;
+        background-color: var(--brown1);
+        opacity: 65%;
+    }
+  
+    .header nav li {
+        display: inline;
+        text-transform: uppercase;
+        position: relative;
+        padding-top: 25px;
+        transition: transform 0.5s;
+  
+    }
+  
+    /* code for hovering over the index subpages */
+    .header nav li:hover {
+        color: black;
+        transform: scale(1.05);
+    }
+  
+    .header nav li::before {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: black;
+        position: absolute;
+        width: 0%;
+        transition: all ease-in-out 250ms;
+    }
+  
+    .header nav li:hover::before {
+        width: 100%;
+    }
+  
+    .header2 {
+        display: none;
+    }
+  
+    .myInd {
+        display: none;
+    }
+  
+    /* code for the body */
+    .ourbingsu {
+        grid-area: ourbingsu;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+  
+    .ourbingsu img {
+        transition: transform 1s;
+        width: 200px;
+        margin-left: 6vh;
+    }
+  
+    .ourbingsu img:hover {
+        transform: scale(1.3);
+    }
+  
+    .ingredients {
+        grid-area: ingredients;
+        list-style: circle;
+    }
+  
+    .bingsub {
+        grid-area: bingsub;
+        margin-bottom: 20vh;
+        margin-top: 50px;
+        padding-bottom: 70px;
+        padding-top: 30px;
+        background-color: var(--brown2);
+    }
+  
+    .bingsub img {
+        width: 6vw;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: inline;
+        transition: transform 0.7s;
+        }
+  
+    .bingsub img:hover {
+        transform: scale(1.2);
+    }
+  
+    .bingsub figcaption {
+        font-size: x-small;
+        display: inline;
+    }
+  
+    .bingsu1 {
+        grid-area: bingsu1;
+        font-size: smaller;
+        line-height: 30px;
+        padding-right: 30px;
+    }
+  
+    .bingsu1 img{
+        width: 25vw;
+        float: left;
+        padding-right: 30px;
+    }
+  
+    .bingsu1 h3 {
+        padding-top: 20px;
+    }
+  
+    .bingsu2 {
+        grid-area: bingsu2;
+        font-size: smaller;
+        line-height: 30px;
+        padding-right: 30px;
+    }
+  
+    .bingsu2 img{
+        width: 25vw;
+        float: left;
+        padding-right: 30px;
+    }
+  
+    .bingsu2 h3 {
+        padding-top: 20px;
+    }
+  
+    .bingsu3 {
+        grid-area: bingsu3;
+        font-size: smaller;
+        line-height: 30px;
+        padding-left: 30px;
+    }
+  
+    .bingsu3 img{
+        width: 25vw;
+        float: right;
+        padding-left: 30px;
+    }
+  
+    .bingsu3 h3 {
+        padding-top: 20px;
+    }
+  
+    .bingsu4 {
+        grid-area: bingsu4;
+        font-size: smaller;
+        line-height: 30px;
+        padding-left: 30px;
+    }
+  
+    .bingsu4 img{
+        width: 25vw;
+        float: right;
+        padding-left: 30px;
+    }
+  
+    .bingsu4 h3 {
+        padding-top: 20px;
+    }
+  
+    .bingsu5 {
+        grid-area: bingsu5;
+        margin-top: 20vh;
+        padding-top: 12vh;
+        padding-bottom: 10vh;
+        background-color: var(--brown2);
+    }
+  
+    .bingsu5 img {
+        width: 20vw;
+        margin-right: 1.5vw;
+        margin-left: 1.5vw;
+    }
+  
+    .bingsu6 {
+        grid-area: bingsu6;
+        margin-top: 20vh;
+        padding-top: 12vh;
+        padding-bottom: 10vh;
+        padding-right: 30px;
+        background-color: var(--brown2);
+    }
+  
+    .bingsu6 p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+  
+    .bingsu6 img {
+        width: 20vw;
+        float: left;
+    }
+  
+    /* code for the back to top button */
+    .top {
+        grid-area: up;
+        color: var(--brown3);
+        transition: 1s;
+        margin-top: 70px;
+    }
+  
+    .top:hover {
+        transform: scale(1.2);
+    }
+  
+    /* code for the footer of the page */
+    .footer {
+        grid-area: footer;
+        font-size: small;
+        line-height: 10px;
+        margin-top: 50px;
+    }
+  
+    .options {
+        grid-area: options;
+        margin-top: 70px;
+        margin-bottom: 30px;
+        font-size: small;
+        line-height: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+  
+    .copyright {
+        grid-area: copyright;
+        font-size: small;
+        line-height: 10px;
+        margin-bottom: 20px;
+    }
+  
+    @media (max-width: 1200px) {
+ .wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: "nav"
+                        "ourbingsu"
+                        "ingredients"
+                        "bingsub"
+                        "bingsu1"
+                        "bingsu2"
+                        "bingsu3"
+                        "bingsu4"
+                        "bingsu5"
+                        "bingsu6"
+                        "up"
+                        "footer"
+                        "options"
+                        "copyright";
+        }
+  
+        .bingsu1 {
+            line-height: 6vh;
+        }
+  
+        .bingsu1 img {
+            width: 50vw;
+        }
+  
+        .bingsu2 {
+            padding-right: 0;
+            padding-left: 30px;
+            line-height: 6vh;
+        }
+  
+        .bingsu2 img {
+            float: right;
+            padding-right: 0;
+            width: 50vw;
+            padding-left: 30px;
+        }
+  
+        .bingsu3 {
+            padding-left: 0;
+            padding-right: 30px;
+            line-height: 6vh;
+        }
+  
+        .bingsu3 img {
+            float: left;
+            width: 50vw;
+            padding-left: 0;
+            padding-right: 30px;
+        }
+  
+        .bingsu4 {
+            line-height: 6vh;
+        }
+  
+        .bingsu4 img {
+            width: 50vw;
+        }
+  
+        .bingsu6 {
+            margin: 0;
+        }
+  
+        .bingsu5 img {
+            width: 40vw;
+            margin-right: 4vw;
+            margin-left: 4w;
+        }
+  
+        .bingsu6 img {
+            width: 40vw;
+            margin-left: 5.6vw;
+        }
+  
+        .bingsu6 p {
+            margin-right: 5vw;
+            font-size: 25px;
+            line-height: 60px;
+        }
+  
+        .bingsu6 h2 {
+            margin-right: 5vw;
+        }
+    }
+  
+    @media (max-width: 750px) {
+        .wrapper {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto auto auto auto auto;
+            grid-template-areas: "nav"
+                                "ourbingsu"
+                                "ingredients"
+                                "bingsub"
+                                "bingsu1"
+                                "bingsu2"
+                                "bingsu3"
+                                "bingsu4"
+                                "bingsu5"
+                                "bingsu6"
+                                "up"
+                                "footer"
+                                "options"
+                                "copyright";
+        }
+  
+        .header nav {
+            display: none;
+        }
+  
+        .afterheader {
+            position: relative;
+        }
+  
+        .title {
+            display: block;
+        }
+  
+        .header2 {
+            grid-area: header2;
+            float: left;
+            display: inline;
+            position: absolute;
+            display: flex;
+            background-color: var(--brown1);
+            opacity: 65%;
+            padding-right: 90vw;
+            padding-top: 2vw;
+            height: 5vh;
+            padding-left: 3vw;
+        }
+  
+        .myInd {
+            display: inline;
+            left: -250px;
+            position : fixed;
+            width: 200px;
+            padding : 0 10px 50px;
+            border-style: solid;
+            border-width: thin;
+            border-color: var(--brown3);
+            opacity: 0%;
+            transition: 1s;
+            height: 100vh;
+            background-color: var(--brown2);
+        }
+  
+        .myInd li {
+            width : 50%;
+            padding : 10px;
+            margin : 0 auto;
+            margin-bottom: 5vh;
+            transition: 0.5s;
+            list-style: none;
+            text-transform: uppercase;
+            font-size: 17px;
+        }
+  
+        .myInd img {
+            margin: 30px;
+            margin-top: 90px;
+            margin-bottom: 70px;
+        }
+  
+        .myInd li:hover {
+            transform: scale(1.3);
+            color: black;
+        }
+  
+        #closeWindow {
+            position : absolute;
+            font-size: xx-large;
+            top: 10px;
+            left: 20px;
+            transition: transform 1s;
+        }
+  
+        #closeWindow:hover {
+            transform: scale(1.15);
+            color: black;
+        }
+  
+        body {
+            font-size: 15px;
+        }
+  
+        .bingsu1 {
+            padding: 10vw;
+        }
+       
+        .bingsu1 img {
+            float: none;
+            padding: 0;
+            width: 80vw;
+        }
+  
+        .bingsu2 {
+            padding: 10vw;
+        }
+  
+        .bingsu2 img {
+            float: none;
+            padding: 0;
+            width: 80vw;
+        }
+  
+        .bingsu3 {
+            padding: 10vw;
+        }
+  
+        .bingsu3 img {
+            float: none;
+            padding: 0;
+            width: 80vw;
+        }
+  
+        .bingsu4 {
+            padding: 10vw;
+        }
+  
+        .bingsu4 img {
+            float: none;
+            padding: 0;
+            width: 80vw;
+        }
+  
+        .bingsu6 img {
+            margin-right: 5vw;
+        }
+  
+        .bingsu6 h2 {
+            font-size: 20px;
+            padding-top: 0;
+            margin-top: 0;
+        }
+  
+        .bingsu6 p {
+            font-size: 14px;
+            margin-top: 0;
+            line-height: 30px;
+        }
+  
+    }
+ 

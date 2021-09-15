@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Anna's Cafe - Home</title>
+   <link rel="icon" href="favicon.ico">
+   <link rel="stylesheet" href="index.css">
+</head>
+ 
+​​<script>
+   function openMenu() {
+          document.getElementById("myIndID").style.opacity="1";
+          document.getElementById("myIndID").style.transform="translate(250px)";
+       }
+ 
+   function closeWindow() {
+          document.getElementById("myIndID").style.opacity="0";
+          document.getElementById("myIndID").style.transform="translate(-250px)";
+      }
+</script>
+ 
+<!-- this is the body for the home page -->
+<body>
+ 
+   <!-- wrapper for div to format grid -->
+   <div class="wrapper">
+ 
+   <!-- code for header -->
+   <div class="header">
+       <nav>
+           <img src="logo.png" style="width: 120px;">
+           <li><a href=index.html>Home</a></li>
+           <li><a href="page.html">Cookies</a></li>
+           <li><a href="page1.html">Bingsu</a></li>
+           <li><a href=page2.html>Drinks</a></li>
+           <li><a href="page3.html">Order</a></li>
+       </nav>
+   </div>
+ 
+   <div class="afterheader">        
+       <div class="header2">
+           <img src="menu.png" onclick="openMenu()" style="width: 7vw; height: 4vh;">
+       </div>
+       <img src="index.gif" class="title" style="width: 100vw;">
+   </div>
+   <nav class="myInd" id="myIndID">
+       <div id="closeWindow" onclick="closeWindow()">EXIT</div>
+       <img src="logo.png" style="width: 120px;">
+       <li><a href=index.html>Home</a></li>
+       <li><a href="page.html">Cookies</a></li>
+       <li><a href="page1.html">Bingsu</a></li>
+       <li><a href=page2.html>Drinks</a></li>
+       <li><a href="page3.html">Order</a></li>
+   </nav>
+ 
+   <!-- code for about us -->
+   <div class="aboutus">
+       <h1>About us</h1>
+       <p>Authentic food and real taste are the focus of Anna's Cafe. We do things the old fashioned way, attempting to bring you the wonders of nature. We strive to handmake all our goods with passion and authenticity, always taking into consideration that the most crucial component of our delicacies is your perspective on how they taste. Whether you're on your first date, spending a relaxing afternoon browsing for meals, or meeting up with old friends, Anna's Cafe has a welcoming ambience that have friendly staff at your service</p>
+       <p>Every day, we create everything from scratch in our kitchen and are constantly experimenting with new flavours and textures. We minimize the quantity of sugar in our food and rely on natural sweetness instead, so you can indulge in our delectable delights without feeling bad.</p>
+   </div>
+ 
+   <!-- code for the same page hyperlinks -->
+   <div class="hyperlinks">
+       <h3>Learn about our signature products:</h3>
+       <p><a href="#cookie">Our Cookies</a></p>
+       <p><a href="#bingsu">Our Bingsu</a></p>
+       <p><a href="#drinks">Our Drinks</a></p>
+   </div>
+ 
+   <!-- code for the cookie description -->
+   <div class="cookie" id="cookie">
+       <h1>Our Cookies</h1>
+       <img src="cookie.jpg" style="width: 100vw">
+       <p>Crisp on the outside and a moist chewy centre that melts in the mouth, a combination of delightful textures originating from this sweet snackful dessert. Our cookie recipes vary with different flavours and toppings to suit and challenge your tastebuds. The recipe was tested over and over again, to perfect its qualities for the satisfaction of our customers as the ingredients and instruments utilized in the process are to their maximised quality.</p>
+       <p>The name of the cookie originates from the Dutch term koekje, which implies "little cake." The first cookie was made in Persia in the 7th century A.D., when sugarcane had first been harvested. Every country appears to have a favourite: chocolate chip in North America, shortbread in the United Kingdom, sables and macarons in France, and biscotti in Italy.</p>
+       <p>Press cookie for more</p>
+       <a href="page.html"><img src="cookiebutton.png" class="cookiebutton" style="width: 120px;"></a>
+   </div>
+ 
+   <!-- code for the bingsu description  -->
+   <div class="bingsu" id="bingsu">
+       <h1>Our Bingsu</h1>
+       <img src="bingsu.jpeg" style="width: 100vw">
+       <p>Bingsu (alternative: Bingsoo) is a popular Korean shaved ice dessert with a variety sweet toppings that are specifically picked to match the overall taste combination that will satisfy our custromers. The original shaved ice flavour has been upgraded to shaved milk, a trending flavour that has a creamy yet icey texture. </p>
+       <p>Bingsu is popular in numerous countries, originating from Korea, seen in countries like Thailand, China and Japan. This treat is perfect to share amongst friends and family, especially during the hotter seasons to cool down your body.</p>
+       <p>Press bingsu for more</p>
+       <a href="page1.html"><img src="bingsubutton.png" class="bingsubutton" style="width: 200px; padding-left: 55px;"></a>
+   </div>
+ 
+   <!-- code for the drinks description  -->
+   <div class="drinks" id="drinks">
+       <h1>Our Drinks</h1>
+       <img src="drinks.jpg" style="width: 100vw;">
+       <p>There is nothing better than having our large variety of refreshing drinks that will beat the heat. These vibrant sweet drinks highlight the beauty of natural ingredients that include fruits and other products. The natural essence create a gorgeous collaboration with the base of the drink, ade as one of our popular bases in the series.</p>
+       <p>Ade is a suffix used to denote a sweetened, fruit– (often citrus) flavored beverage, commonly served at Anna's cafe, as well as other drinks like ice coffees, ice chocolates, flavoured lattes and more. Drinks vary all around the globe, contrasting in flavours, textures, temperature and more, as our drinks specifically focus on the cool drinks that we prefer on hot days. </p>
+       <p>Press drink for more</p>
+       <a href="page2.html"><img src="drinksbutton.png" class="drinksbutton" style="width: 130px;"></a>
+   </div>
+ 
+   <div class="top">
+       <h2><a href="#top">Back to Top</a></h2>
+   </div>
+ 
+   <!-- code for the sponser/advertisement -->
+   <div class="ad">
+       <h3>Try Grammarbee for free today</h3>
+       <img src="grammarbee.png" style="width: 100px; float: left; margin: 15px;">
+       <p>Try a free seven day trial with Grammarbee to help your grammar wherever you are, with your free writing assistant that provides instant proofreading for any of your works and on numerous application, google docbee being one of our largest sponsers</p>
+       <h5>Make writing easy with Grammarbee</h5>
+   </div>
+ 
+   <div class="ad2">
+       <h3>Listen to music freely with Banana Music</h3>
+       <img src="banana.png" style="width: 100px; float: left; margin: 15px;">
+       <p>To recieve Ad-Free music, access to extensive playlists and create your own original music, purchase a subscription to Banana Music starting at $12/month, as well as having a shared subscription to establish flexible pricing for you and others.</p>
+       <h5>Express your uninterrupted music with Banana Music</h5>
+   </div>
+ 
+   <!-- code for the footer of the page -->
+   <div class="footer">
+       <img src="logo.png" style="width: 200px;">
+       <p>.</p>
+       <img src="destination.png" style="width: 20px;">
+       <p>Level 5/ 268 Anna Street, NSW 2000</p>
+       <p>.</p>
+       <img src="phone.png" style="width: 20px;">
+       <p>(01) 2345 6789</p>
+       <p>.</p>
+       <img src="mail.png" style="width: 20px;">
+       <p>annascafe@examplemail.com.au</p>
+       <p>.</p>
+       <img src="insta.png" style="width: 70px; margin-top: 50px;">
+       <p>@annascafe</p>
+   </div>
+ 
+   <!-- code for the payment method pictures in the footer -->
+   <div class="options">
+       <p1>TERMS & CONDITIONS</p1>
+       <p1>PRIVACY POLICY</p1>
+       <p1>SHIPPING & COSTS</p1>
+       <p1>FAQ</p1>
+   </div>
+ 
+   <div class="copyright">
+       <p>Copyright Anna Jin 2021</p>
+       <img src="payment.png" style="width: 20vw;">
+   </div>
+ 
+</body>
+</html>

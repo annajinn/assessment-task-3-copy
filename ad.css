@@ -1,0 +1,195 @@
+body {
+    background-color: slategrey;
+    margin: 0px;
+ }
+ /* title  */
+ .myHeader {
+    grid-area: title;
+    font-size: larger;
+    padding-left: 30px;
+    display: grid;
+    place-content: center;
+ }
+  
+ /* the grid formatting code */
+ .wrapper {
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    grid-template-rows: 10vh auto auto auto auto auto auto auto auto;
+    grid-template-areas:"title search"
+                         "image image"
+                         "news art1"
+                         "news art2"
+                         "news art3"
+                         "news art4"
+                         "cafe cafe"
+                         "footer footer2";
+ }
+  
+ .mySearch {
+    grid-area: search;
+    text-align: right;
+    padding-right: 20px;
+ }
+  
+ /* main image at the top of the page */
+ .myImage {
+    grid-area: image;
+    position: relative;
+ }
+  
+ /* the text inside of the main image */
+ .textinside {
+    position: absolute;
+    padding: 4%;
+    width: 92vw;
+    bottom: 0.1vh;
+    font-size: 10px;
+    background-color: rgba(112, 128, 144, 0.555);
+ }
+  
+ /* article 1 styling */
+ .myArticles1 {
+    grid-area: art1;
+    margin: 5%;
+    border-style: solid;
+    border-color: rgb(100, 115, 129);
+    padding: 5px;
+ }
+ .myArticles1 img {
+    float: left;
+    margin: 15px;
+    width: 10vw;
+ }
+  
+ /* article 2 styling */
+ .myArticles2 {
+    grid-area: art2;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    border-style: solid;
+    border-color: rgb(100, 115, 129);
+    padding: 5px;
+ }
+ .myArticles2 img {
+    float: left;
+    margin: 15px;
+    width: 10vw;
+ }
+  
+ /* article 3 styling */
+ .myArticles3 {
+    grid-area: art3;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    border-style: solid;
+    border-color: rgb(100, 115, 129);
+    padding: 5px;
+ }
+ .myArticles3 img {
+    float: left;
+    margin: 15px;
+    width: 10vw;
+ }
+  
+ /* article 4 styling */
+ .myArticles4 {
+    grid-area: art4;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    border-style: solid;
+    border-color: rgb(100, 115, 129);
+    padding: 5px;
+ }
+ .myArticles4 img {
+    float: left;
+    margin: 15px;
+    width: 10vw;
+ }
+  
+ /* news and content on the left */
+ .myNewsandContent {
+    grid-area: news;
+    margin: 10%;
+    line-height: 3vh;
+ }
+  
+ .cafe {
+    grid-area: cafe;
+    border-style: solid;
+    border-color: rgb(100, 115, 129);
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin: 3vw;
+    line-height: 5vh;
+    text-align: center;
+ }
+  
+ .cafe img {
+    margin-top: 6vh;
+    width: 30vw;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    border-color: rgb(100, 115, 129);
+    border-style: solid;
+    padding: 1vw;
+ }
+  
+ /* footer */
+ .myFooter {
+    grid-area: footer;
+    text-align: left;
+    padding-left: 5vw;
+    padding-right: 20%;
+    background-color: rgb(100, 115, 129);
+    padding-bottom: 5vh;
+ }
+ /* second part of footer */
+ .myFooter2 {
+    grid-area: footer2;
+    text-align: left;
+    padding-left: 15vw;
+    padding-right: 20%;
+    background-color: rgb(100, 115, 129);
+    padding-bottom: 5vh;
+ }
+ /* code for media which is the adjustments when the screen size changes */
+ @media (max-width: 700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "nav nav"
+                         "title search"
+                         "image image"
+                         "news news"
+                         "art1 art1"
+                         "art2 art2"
+                         "art3 art3"
+                         "art4 art4"
+                         "cafe cafe"
+                         "footer footer2"
+    }
+ /* footer adjustment for media */
+    .myFooter2 {
+        padding-left: 5vw;
+    }
+  
+ /* media code for the images on the article */
+    .myArticles1 img {
+        width: 15vw;
+    }
+    .myArticles2 img {
+        width: 15vw;
+    }
+    .myArticles3 img {
+        width: 15vw;
+    }
+    .myArticles4 img {
+        width: 15vw;
+    }
+ }
+ 

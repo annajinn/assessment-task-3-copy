@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Anna's Cafe - Bingsu</title>
+   <link rel="icon" href="favicon.ico">
+   <link rel="stylesheet" href="page1.css">
+</head>
+ 
+<script>
+   function openMenu() {
+          document.getElementById("myIndID").style.opacity="1";
+          document.getElementById("myIndID").style.transform="translate(250px)";
+       }
+ 
+   function closeWindow() {
+          document.getElementById("myIndID").style.opacity="0";
+          document.getElementById("myIndID").style.transform="translate(-250px)";
+      }
+</script>
+ 
+<body>
+ 
+   <!-- wrapper for div to format grid -->
+   <div class="wrapper">
+ 
+       <!-- code for header -->
+       <div class="header">
+           <nav>
+               <img src="logo.png" style="width: 120px;">
+               <li><a href=index.html>Home</a></li>
+               <li><a href="page.html">Cookies</a></li>
+               <li><a href="page1.html">Bingsu</a></li>
+               <li><a href=page2.html>Drinks</a></li>
+               <li><a href="page3.html">Order</a></li>
+           </nav>
+       </div>
+  
+       <div class="afterheader">        
+           <div class="header2">
+               <img src="menu.png" onclick="openMenu()" style="width: 7vw; height: 4vh;">
+           </div>
+           <img src="bingsu.gif" class="title" style="width: 100vw;">
+       </div>
+   
+       <nav class="myInd" id="myIndID">
+           <div id="closeWindow" onclick="closeWindow()">EXIT</div>
+           <img src="logo.png" style="width: 120px;">
+           <li><a href=index.html>Home</a></li>
+           <li><a href="page.html">Cookies</a></li>
+           <li><a href="page1.html">Bingsu</a></li>
+           <li><a href=page2.html>Drinks</a></li>
+           <li><a href="page3.html">Order</a></li>
+       </nav>
+ 
+       <div class="ourbingsu">
+           <img src="bingsubutton.png" style="margin-bottom: 6vh;">
+           <h1>Our Bingsu</h1>
+           <p>You know it's in there, don't you? Bingsu is a popular Korean frozen dessert made with shaved ice and a variety of toppings such as berries, condensed milk, flavourings, cocoa, oats, powders, cereals, and so on. In reality, bingsu is a Korean word that means "shaved ice." Shaved ice is covered with delicious red bean paste in traditional bingsu, also known as patbingsu. As you may expect, there are now lots of different types of bingsu.</p>
+       </div>
+ 
+       <div class="ingredients">
+           <h5>The base ingredients are:</h5>
+           <li>Frozen milk (alternative: ice)</li>
+           <li>Natural Flavours: fruits, nuts, etc.</li>
+           <li>Other flavours: matcha, powders, etc.</li>
+       </div>
+ 
+       <div class="bingsub">
+           <h5>Press Bingsu flavour for more info</h5>
+           <a href="#bingsu1"><img src="bingsub1.png"></a>
+           <figcaption>peach</figcaption>
+           <a href="#bingsu2"><img src="bingsub2.png"></a>
+           <figcaption>sesame</figcaption>
+           <a href="#bingsu3"><img src="bingsub3.png"></a>
+           <figcaption>strawberry</figcaption>
+           <a href="#bingsu4"><img src="bingsub4.png"></a>
+           <figcaption>matcha</figcaption>
+       </div>
+ 
+       <div class="bingsu1" id="bingsu1">
+           <img src="bingsu1.png">
+           <h3>Peach Bingsu</h3>
+           <p>The combination of the milk bingsu and fresh peaches provide a natural sweetness, perfect for a hot day. The flesh of the white peaches has a delicate, floral sweetness, while yellow peaches have a more acidic taste as the both of the peaches are used in the recipe to bring out the most approporiate balance of flavours to the table. </p>
+       </div>
+ 
+       <div class="bingsu2" id="bingsu2">
+           <img src="bingsu2.png">
+           <h3>Black Sesame Bingsu</h3>
+           <p>Black sesame seeds have a little nuttier, bitter flavour. The deeper, more aromatic earthiness of black sesame seeds becomes obvious when used in a greater quantity, making a considerable difference. That level of intensity can tolerate dilution with the creaminess of the bingsu, ensuring that the prized flavour and colour are there in every bite.</p>
+       </div>
+ 
+       <div class="bingsu3" id="bingsu3">
+           <img src="bingsu3.png">
+           <h3>Strawberry Bingsu</h3>
+           <p>The strawberries we use are in season and are delicious, sweet, and juicy, with a hint of acidity, when picked at their peak maturity. Strawberries are prized for their vibrant red colour, juiciness, distinct aroma, and sweet fruity flavour. The torched finish of the meringue emcourages a creamy flavour with texture that also uses a dash of lemon to bring out the acidity.</p>
+       </div>
+ 
+       <div class="bingsu4" id="bingsu4">
+           <img src="bingsu4.png">
+           <h3>Matcha Bingsu</h3>
+           <p>A nostalgic texture is seen when the drozen milk is shaved with a traditional shaved ice machine. "Matcha Kintoki" with a slightly bitter taste, "Minamizuki" with a distinctive flavored bean paste , sweet and sour "Amanatsu" and "Plum honey" with plenty of flesh. The end product is a rich earthy tea with grassy vegetal aromas, sweet nuttiness, and nice bitter undertones.</p>
+       </div>
+ 
+       <div class="bingsu5">
+           <img src="bingsu5.png">
+           <img src="bingsu6.png">
+       </div>
+ 
+       <div class="bingsu6">
+           <img src="bingsu7.png" style="padding-right: 30px;">
+           <h2>Limited Edition - Melon Bingsu</h2>
+           <p>Instead of sweet condensed milk, our team created a sweet iced coconut milk using a little simple syrup. Top with juicy melon balls, and a scoop of coconut ice cream.</p>
+       </div>
+ 
+ 
+       <div class="top">
+           <h2><a href="#top">Back to Top</a></h2>
+       </div>
+ 
+       <!-- code for the footer of the page -->
+       <div class="footer">
+           <img src="logo.png" style="width: 200px;">
+           <p>.</p>
+           <img src="destination.png" style="width: 20px;">
+           <p>Level 5/ 268 Anna Street, NSW 2000</p>
+           <p>.</p>
+           <img src="phone.png" style="width: 20px;">
+           <p>(01) 2345 6789</p>
+           <p>.</p>
+           <img src="mail.png" style="width: 20px;">
+           <p>annascafe@examplemail.com.au</p>
+           <p>.</p>
+           <img src="insta.png" style="width: 70px; margin-top: 50px;">
+           <p>@annascafe</p>
+       </div>
+  
+       <!-- code for the payment method pictures in the footer -->
+       <div class="options">
+           <p1>TERMS & CONDITIONS</p1>
+           <p1>PRIVACY POLICY</p1>
+           <p1>SHIPPING & COSTS</p1>
+           <p1>FAQ</p1>
+       </div>
+  
+       <div class="copyright">
+           <p>Copyright Anna Jin 2021</p>
+           <img src="payment.png" style="width: 20vw;">
+       </div>
+ 
+</body>
+</html>

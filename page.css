@@ -1,0 +1,489 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: "nav nav nav"
+                        "body body body"
+                        "ingredients ingredients ingredients"
+                        "cookieb cookieb cookieb"
+                        "cookie1 cookie2 cookie3"
+                        "cookie4 cookie5 cookie6"
+                        "cookie7 cookie7 cookie7"
+                        "oreos oreos oreos"
+                        "up up up"
+                        "footer footer footer"
+                        "options options options"
+                        "copyright copyright copyright";
+ }
+  
+ :root {
+    --brown1 : #EEE2D5;
+    --brown2 : #C4B5A6;
+    --brown3 : #847564;
+    --brown4 : #554939;
+   }
+  
+    body {
+        background-color: var(--brown1);
+        margin: 0px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 40px;
+        font-size: larger;
+        text-align: center;
+        color: var(--brown4);
+    }
+  
+    /* styling for the header of the home page */
+    .header {
+        grid-area: nav;
+        width: 100vw;
+        font-weight: 300;
+        padding-bottom: 30px;
+        position: absolute;
+    }
+  
+    .header img {
+        float: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+  
+    /* styling for the navigation bar in the header */
+    .header nav {
+        display: flex;
+        justify-content: space-evenly;
+        float: inline-start;
+        list-style: none;
+        color: var(--brown4);
+        padding-right: 10vw;
+        background-color: var(--brown1);
+        opacity: 65%;
+    }
+  
+    .header nav li {
+        display: inline;
+        text-transform: uppercase;
+        position: relative;
+        padding-top: 25px;
+        transition: transform 0.5s;
+  
+    }
+  
+    /* code for hovering over the index subpages */
+    .header nav li:hover {
+        color: black;
+        transform: scale(1.05);
+    }
+  
+    .header nav li::before {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: black;
+        position: absolute;
+        width: 0%;
+        transition: all ease-in-out 250ms;
+    }
+  
+    .header nav li:hover::before {
+        width: 100%;
+    }
+  
+    .header2 {
+        display: none;
+    }
+  
+    .myInd {
+        display: none;
+    }
+  
+    .ourcookies {
+        grid-area: body;
+        padding: 8vw;
+    }
+  
+    .ourcookies img {
+        transition: transform 1s;
+        width: 200px;
+    }
+  
+    .ourcookies img:hover {
+        transform: scale(1.5);
+    }
+  
+    .ingredients {
+        grid-area: ingredients;
+        list-style: circle;
+        margin-bottom: 10vh;
+    }
+  
+    .cookieb {
+        grid-area: cookieb;
+        margin-bottom: 20vh;
+        margin-top: 50px;
+        padding-bottom: 70px;
+        padding-top: 30px;
+        background-color: var(--brown2);
+    }
+  
+    .cookieb img {
+        width: 6vw;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: inline;
+        transition: transform 0.7s;
+        }
+  
+    .cookieb img:hover {
+        transform: scale(1.2);
+    }
+  
+    .cookieb figcaption {
+        font-size: x-small;
+        display: inline;
+    }
+  
+    .cookie1 {
+        grid-area: cookie1;
+    }
+  
+    .cookie1 img {
+        margin: 10px;
+        width: 30vw;
+    }
+  
+    .cookie1 p {
+        padding: 32px;
+    }
+  
+    .cookie2 {
+        grid-area: cookie2;
+    }
+  
+    .cookie2 img {
+        margin: 10px;
+        width: 30vw;
+    }
+  
+    .cookie2 p {
+        padding: 32px;
+    }
+  
+    .cookie3 {
+        grid-area: cookie3;
+    }
+  
+    .cookie3 img {
+        margin: 10px;
+        width: 30vw;
+    }
+  
+    .cookie3 p {
+        padding: 32px;
+    }
+  
+    .cookie4 {
+        grid-area: cookie4;
+    }
+  
+    .cookie4 img {
+        margin: 10px;
+        width: 30vw;
+    }
+  
+    .cookie4 p {
+        padding: 32px;
+    }
+  
+    .cookie5 {
+        grid-area: cookie5;
+    }
+  
+    .cookie5 img {
+        margin: 10px;
+        width: 30vw;
+    }
+  
+    .cookie5 p {
+        padding: 32px;
+    }
+  
+    .cookie6 {
+        grid-area: cookie6;
+    }
+  
+    .cookie6 img {
+        margin: 10px;
+        width: 30vw;
+    }
+  
+    .cookie6 p {
+        padding: 32px;
+    }
+  
+    .cookie7 {
+        grid-area: cookie7;
+    }
+  
+    .cookie7 p {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+  
+    .cookie7 img {
+        width: 70vw;
+    }
+  
+    .oreos {
+        grid-area: oreos;
+    }
+  
+    .oreos img {
+        display: inline;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-top: 20px;
+    }
+  
+    .top {
+        grid-area: up;
+        color: var(--brown3);
+        transition: 1s;
+    }
+  
+    .top:hover {
+        transform: scale(1.2);
+    }
+  
+    .footer {
+        grid-area: footer;
+        font-size: small;
+        line-height: 10px;
+        margin-top: 50px;
+    }
+  
+    .options {
+        grid-area: options;
+        margin-top: 70px;
+        margin-bottom: 30px;
+        font-size: small;
+        line-height: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+  
+    .copyright {
+        grid-area: copyright;
+        font-size: small;
+        line-height: 10px;
+        margin-bottom: 20px;
+    }
+  
+    @media (max-width: 1000px) {
+        .wrapper {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto;
+            grid-template-areas: "nav nav"
+                                "body body"
+                                "ingredients ingredients"
+                                "cookieb cookieb"
+                                "cookie1 cookie2"
+                                "cookie3 cookie4"
+                                "cookie5 cookie6"
+                                "cookie7 cookie7"
+                                "oreos oreos"
+                                "up up"
+                                "footer footer"
+                                "options options"
+                                "copyright copyright";
+        }
+  
+        body {
+            font-size: 15px;
+            line-height: 35px;
+        }
+  
+  
+        .ourcookies img {
+            width: 150px;
+        }
+  
+        .cookie1 img{
+            width: 45vw;
+        }
+  
+        .cookie2 img{
+            width: 45vw;
+        }
+  
+        .cookie3 img{
+            width: 45vw;
+        }
+  
+        .cookie4 img{
+            width: 45vw;
+        }
+  
+        .cookie5 img{
+            width: 45vw;
+        }
+  
+        .cookie6 img{
+            width: 45vw;
+        }
+  
+    }
+  
+    @media (max-width: 600px) {
+        .wrapper {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+            grid-template-areas: "nav"
+                                "body"
+                                "ingredients"
+                                "cookieb"
+                                "cookie1"
+                                "cookie2"
+                                "cookie3"
+                                "cookie4"
+                                "cookie5"
+                                "cookie6"
+                                "cookie7"
+                                "oreos"
+                                "up"
+                                "footer"
+                                "options"
+                                "copyright";
+        }
+  
+        .header nav {
+            display: none;
+        }
+  
+        .afterheader {
+            position: relative;
+        }
+  
+        .title {
+            display: block;
+        }
+  
+        .header2 {
+            grid-area: header2;
+            float: left;
+            display: inline;
+            position: absolute;
+            display: flex;
+            background-color: var(--brown1);
+            opacity: 65%;
+            padding-right: 90vw;
+            padding-top: 2vw;
+            height: 5vh;
+            padding-left: 3vw;
+        }
+  
+        .myInd {
+            display: inline;
+            left: -250px;
+            position : fixed;
+            width: 200px;
+            padding : 0 10px 50px;
+            border-style: solid;
+            border-width: thin;
+            border-color: var(--brown3);
+            opacity: 0%;
+            transition: 1s;
+            height: 100vh;
+            background-color: var(--brown2);
+        }
+  
+        .myInd li {
+            width : 50%;
+            padding : 10px;
+            margin : 0 auto;
+            margin-bottom: 5vh;
+            transition: 0.5s;
+            list-style: none;
+            text-transform: uppercase;
+            font-size: 17px;
+        }
+  
+        .myInd img {
+            margin: 30px;
+            margin-top: 90px;
+            margin-bottom: 70px;
+        }
+  
+        .myInd li:hover {
+            transform: scale(1.3);
+            color: black;
+        }
+  
+        #closeWindow {
+            position : absolute;
+            font-size: xx-large;
+            top: 10px;
+            left: 20px;
+            transition: transform 1s;
+        }
+  
+        #closeWindow:hover {
+            transform: scale(1.15);
+            color: black;
+        }
+  
+        .cookie1 img{
+            width: 70vw;
+        }
+  
+        .cookie2 img{
+            width: 70vw;
+        }
+  
+        .cookie3 img{
+            width: 70vw;
+        }
+  
+        .cookie4 img{
+            width: 70vw;
+        }
+  
+        .cookie5 img{
+            width: 70vw;
+        }
+  
+        .cookie6 img{
+            width: 70vw;
+        }
+  
+        .cookie7 p {
+            position: absolute;
+            padding-right: 10vw;
+            padding-left: 10vw;
+            margin-top: 0;
+            padding-top: 10px;
+            background-color: var(--brown1);
+            opacity: 80%;
+            line-height: 25px;
+        }
+  
+        .cookie7 nav {
+            position: absolute;
+            width: 80vw;
+            padding-right: 10vw;
+            padding-left: 10vw;
+            margin-top: 110px;
+            background-color: var(--brown1);
+            opacity: 80%;
+            line-height: 25px;
+            list-style: circle;
+        }
+  
+        .cookie7 img {
+            width: 100vw;
+        }
+  
+    }
+ 
