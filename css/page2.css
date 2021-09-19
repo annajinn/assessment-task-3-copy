@@ -307,6 +307,57 @@
     .drink6 h3 {
         padding-top: 20px;
     }
+
+        /* styling for the sponsor */
+
+    .sponserheader {
+        grid-area: sponserheader;
+        background-color: var(--brown2);
+    }
+  
+    .sponserimg {
+        grid-area: sponserimg;
+        background-color: var(--brown2);
+        padding-top: 2vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+  
+    .sponserimg img {
+        width: 20vw;
+        border-color: var(--brown3);
+        border-width: thin;
+        border-style: solid;
+        padding: 20px;
+        transition: transform 0.5s;
+    }
+  
+    .sponserimg img:hover {
+        transform: scale(1.03);
+    }
+  
+    .sponsertext {
+        grid-area: sponsertext;
+        background-color: var(--brown2);
+        padding-top: 2vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+  
+    .sponsertext img {
+        width: 20vw;
+    }
+  
+    .sponser {
+        grid-area: sponser;
+        font-size: 20px;
+        background-color: var(--brown2);
+        list-style: circle;
+        padding: 7vh;
+    }
+
   
     .ad1 {
         grid-area: ad1;
@@ -347,6 +398,42 @@
     .ad2 p {
         padding: 3vw;
     }
+
+
+    /* styling for the anna news sponsor */
+  
+    .sponser2 {
+        grid-area: sponser2;
+        font-size: 20px;
+        background-color: var(--brown2);
+        padding-right: 10vw;
+        padding-left: 10vw;
+        padding-bottom: 7vh;
+        padding-top: 4vh;
+    }
+  
+    .sponser2 img{
+        margin-right: 5vw;
+        margin-left: 5vw;
+        border-color: var(--brown3);
+        border-width: 2px;
+        border-style: solid;
+        padding: 20px;
+        transition: transform 0.8s;
+    }
+  
+    .sponser2 img:hover {
+        transform: scale(1.06);
+    }
+
+    .sponser2 h4:hover {
+        transform: scale(1.1);
+    }
+
+    .sponser2 h4 {
+        transition: 0.8s;
+    }
+
   
   
     /* code for the back to top button */
