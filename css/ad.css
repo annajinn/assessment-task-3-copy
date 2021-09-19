@@ -5,8 +5,8 @@ body {
  /* title  */
  .myHeader {
     grid-area: title;
-    font-size: larger;
-    padding-left: 30px;
+    font-size: 1vw;
+    padding: 30px;
     display: grid;
     place-content: center;
  }
@@ -176,6 +176,16 @@ body {
  /* footer adjustment for media */
     .myFooter2 {
         padding-left: 5vw;
+    }
+
+    .myHeader {
+       font-size: 2vw;
+       padding: 1vw;
+       padding-left: 3vw;
+    }
+
+    .textinside {
+       font-size: 1.5vw;
     }
   
  /* media code for the images on the article */
