@@ -116,6 +116,21 @@
 
     .ourcontact {
         grid-area: ourcontact;
+        list-style: none;
+    }
+
+    .ourcontact nav {
+        font-size: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--brown2);
+        margin: 5vw;
+        padding-bottom: 7px;
+    }
+
+    .ourcontact nav img {
+        margin: 20px;
+        margin-bottom: 0;
     }
 
     /* the faq title */
