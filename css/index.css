@@ -3,7 +3,6 @@
     grid-template-columns: 50vw 50vw;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
     grid-template-areas: "nav nav"
-                         "img img"
                          "aboutus aboutus"
                          "hyper hyper"
                          "cookie cookie"
@@ -355,7 +354,7 @@
     }
   
     /* code for the media query */
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
         .wrapper {
             display: grid;
             grid-template-columns: 100vw;
@@ -460,6 +459,14 @@
         #closeWindow:hover {
             transform: scale(1.15);
             color: black;
+        }
+
+        .sponser {
+            font-size: 15px;
+        }
+
+        .sponser2 {
+            font-size: 15px;
         }
   
     }
