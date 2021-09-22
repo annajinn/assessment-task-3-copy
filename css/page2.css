@@ -794,9 +794,21 @@
     .ad1 {
         font-size: 15px;
     }
+
+    .ad1 img {
+        float: left;
+        width: 20vw;
+        margin: 3vw;
+    }
   
     .ad2 {
         font-size: 15px;
+    }
+
+    .ad2 img {
+        float: left;
+        width: 20vw;
+        margin: 3vw;
     }
 
     .sponser {

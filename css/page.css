@@ -9,12 +9,12 @@
                         "cookie1 cookie2 cookie3"
                         "cookie4 cookie5 cookie6"
                         "cookie7 cookie7 cookie7"
-                        "oreos oreos oreos"
                         "up up up"
                         "sponserheader sponserheader sponserheader"
                         "sponserimg sponserimg sponserimg"
                         "sponsertext sponsertext sponsertext"
                         "sponser sponser sponser"
+                        "oreos oreos oreos"
                         "sponser2 sponser2 sponser2"
                         "footer footer footer"
                         "options options options"
@@ -241,12 +241,14 @@
   
     .oreos {
         grid-area: oreos;
+        padding: 5vw;
+        list-style: circle;
     }
   
     .oreos img {
         display: inline;
-        margin-left: 2vw;
-        margin-right: 2vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
         margin-top: 20px;
     }
 
@@ -384,12 +386,12 @@
                                 "cookie3 cookie4"
                                 "cookie5 cookie6"
                                 "cookie7 cookie7"
-                                "oreos oreos"
                                 "up up"
                                 "sponserheader sponserheader"
                                 "sponserimg sponserimg"
                                 "sponsertext sponsertext"
                                 "sponser sponser"
+                                "oreos oreos"
                                 "sponser2 sponser2"
                                 "footer footer"
                                 "options options"
@@ -515,6 +517,7 @@
         .sponser2 {
             font-size: 15px;
         }
+
   
     }
   
@@ -534,12 +537,12 @@
                                 "cookie5"
                                 "cookie6"
                                 "cookie7"
-                                "oreos"
                                 "up"
                                 "sponserheader"
                                 "sponserimg"
                                 "sponsertext"
                                 "sponser"
+                                "oreos"
                                 "sponser2"
                                 "footer"
                                 "options"

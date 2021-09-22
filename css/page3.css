@@ -169,10 +169,11 @@
         width: 14vw;
         border-radius: 10px;
         border: 3px outset var(--brown3);
+        transition: 0.5s;
     }
 
     .contact nav1 li img:hover {
-        transform: scale();
+        transform: scale(1.07);
     }
 
     /* the faq title */

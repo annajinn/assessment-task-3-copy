@@ -9,12 +9,13 @@
                         "bingsu1 bingsu2"
                         "bingsu3 bingsu4"
                         "bingsu5 bingsu6"
+                        "up up"
                         "sponserheader sponserheader"
                         "sponserimg sponserimg"
                         "sponsertext sponsertext"
                         "sponser sponser"
+                        "ad1 ad2"
                         "sponser2 sponser2"
-                        "up up"
                         "footer footer"
                         "options options"
                         "copyright copyright";
@@ -300,6 +301,47 @@
         padding: 7vh;
     }
 
+    /* this is styling for the ads */
+    .ad1 {
+        grid-area: ad1;
+        border: var(--brown2);
+        border-width: 2px;
+        border-style: solid;
+        margin: 7vw;
+        font-size: 20px;
+        line-height: 7vh;
+        padding: 20px;
+        color: var(--brown3);
+    }
+  
+    .ad1 img {
+        width: 25vw;
+    }
+  
+    .ad1 p {
+        padding: 3vw;
+    }
+  
+    .ad2 {
+        grid-area: ad2;
+        border: var(--brown2);
+        border-width: 2px;
+        border-style: solid;
+        margin: 7vw;
+        font-size: 20px;
+        line-height: 7vh;
+        padding: 20px;
+        color: var(--brown3);
+    }
+  
+    .ad2 img {
+        width: 25vw;
+    }
+  
+    .ad2 p {
+        padding: 3vw;
+    }
+
 
     /* styling for the anna news sponsor */
   
@@ -342,7 +384,7 @@
         grid-area: up;
         color: var(--brown3);
         transition: 1s;
-        margin-top: 70px;
+        margin: 12vw;
     }
   
     .top:hover {
@@ -389,13 +431,14 @@
                         "bingsu4"
                         "bingsu5"
                         "bingsu6"
+                        "up"
                         "sponserheader"
                         "sponserimg"
                         "sponsertext"
                         "sponser"
-                        "sponser"
+                        "ad1"
+                        "ad2"
                         "sponser2"
-                        "up"
                         "footer"
                         "options"
                         "copyright";
@@ -484,12 +527,14 @@
                                 "bingsu4"
                                 "bingsu5"
                                 "bingsu6"
+                                "up"
                                 "sponserheader"
                                 "sponserimg"
                                 "sponsertext"
                                 "sponser"
+                                "ad1"
+                                "ad2"
                                 "sponser2"
-                                "up"
                                 "footer"
                                 "options"
                                 "copyright";
@@ -629,6 +674,26 @@
             font-size: 14px;
             margin-top: 0;
             line-height: 30px;
+        }
+
+        .ad1 {
+            font-size: 15px;
+        }
+
+        .ad1 img {
+            float: left;
+            width: 20vw;
+            margin: 3vw;
+        }
+      
+        .ad2 {
+            font-size: 15px;
+        }
+
+        .ad2 img {
+            float: left;
+            width: 20vw;
+            margin: 3vw;
         }
 
         .sponser {
