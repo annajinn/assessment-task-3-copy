@@ -152,6 +152,14 @@
         margin-bottom: 10vh;
     }
 
+    .ourcontact img:hover {
+        transform: scale(1.1);
+    }
+
+    .ourcontact img {
+        transition: 0.7s;
+    }
+
     .hyperlinks p {
         transition: 0.7s;
     }
