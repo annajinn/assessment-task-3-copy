@@ -26,11 +26,27 @@
     --brown3 : #847564;
     --brown4 : #554939;
    }
+
+    @font-face {
+        font-family: font1;
+        src: url(JosefinSans-Light.ttf);
+    }
+
+    @font-face {
+        font-family: font2;
+        src: url(BakerieSmooth-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: font3;
+        src: url(DailyChallenge.ttf);
+    }
   
     body {
         background-color: var(--brown1);
         margin: 0px;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: font1;
+        font-weight: 600;
         line-height: 40px;
         font-size: larger;
         text-align: center;
@@ -70,13 +86,14 @@
         position: relative;
         padding-top: 25px;
         transition: transform 0.5s;
-  
+        font-family: font3;
+        font-size: 30px;
     }
   
     /* code for hovering over the index subpages */
     .header nav li:hover {
         color: black;
-        transform: scale(1.05);
+        transform: scale(1.1);
     }
   
     .header nav li::before {
@@ -104,12 +121,28 @@
     /* code for the hyperlinks */
     .hyperlinks {
         grid-area: hyper;
+        font-family: font3;
+        font-weight: 300;
+        font-size: 25px;
+    }
+
+    .hyperlinks p {
+        transition: 0.7s;
+    }
+
+    .hyperlinks p:hover {
+        transform: scale(1.1);
     }
   
     /* code for the about us description */
     .aboutus {
         grid-area: aboutus;
         margin: 5vw;
+    }
+
+    .aboutus h1 {
+        font-family: font3;
+        font-size: 60px;
     }
   
     .aboutus p {
@@ -131,6 +164,8 @@
         background-color: var(--brown2);
         opacity: 70%;
         margin: 0;
+        font-family: font3;
+        font-size: 60px;
     }
   
     .cookie p {
@@ -161,6 +196,8 @@
         background-color: var(--brown2);
         opacity: 70%;
         margin: 0;
+        font-family: font3;
+        font-size: 60px;
     }
   
     .bingsu p {
@@ -192,6 +229,8 @@
         background-color: var(--brown2);
         opacity: 70%;
         margin: 0;
+        font-family: font3;
+        font-size: 60px;
     }
   
     .drinks p {
@@ -210,6 +249,9 @@
     /* code for the top button */
     .top {
         grid-area: up;
+        font-family: font3;
+        font-size: 30px;
+        transition: 0.5s;
     }
   
     .top:hover {
@@ -221,6 +263,8 @@
     .sponserheader {
         grid-area: sponserheader;
         background-color: var(--brown2);
+        font-family: font3;
+        font-size: 40px;
     }
   
     .sponserimg {
@@ -279,6 +323,12 @@
         padding: 15px;
         color: var(--brown3);
     }
+
+    .ad h3 {
+        font-family: font2;
+        font-size: 25px;
+        line-height: 40px;
+    }
   
     .ad2 {
         grid-area: ad2;
@@ -290,6 +340,12 @@
         line-height: 20px;
         padding: 15px;
         color: var(--brown3);
+    }
+
+    .ad2 h3 {
+        font-family: font2;
+        font-size: 25px;
+        line-height: 40px;
     }
 
 
@@ -323,15 +379,23 @@
         transform: scale(1.1);
     }
 
+    .sponser2 h2{
+        font-family: font3;
+        font-size: 40px;
+    }
+
     .sponser2 h4 {
         transition: 0.8s;
+        font-family: font3;
+        font-weight: 300;
+        font-size: 30px;
     }
 
   
     /* code for the footer section */
     .footer {
         grid-area: footer;
-        font-size: small;
+        font-size: 18px;
         line-height: 10px;
         margin-top: 50px;
     }
@@ -340,15 +404,16 @@
         grid-area: options;
         margin-top: 70px;
         margin-bottom: 30px;
-        font-size: small;
         line-height: 10px;
         display: flex;
         justify-content: space-evenly;
+        font-family: font3;
+        font-size: 30px;
+        font-weight: 300;
     }
   
     .copyright {
         grid-area: copyright;
-        font-size: small;
         line-height: 10px;
         margin-bottom: 20px;
     }
@@ -434,7 +499,9 @@
             transition: 0.5s;
             list-style: none;
             text-transform: uppercase;
-            font-size: 17px;
+            font-family: font3;
+            font-size: 25px;
+            font-weight: 400;
         }
   
         .myInd img {
@@ -461,12 +528,38 @@
             color: black;
         }
 
+        .top {
+            font-size: 20px;
+        }
+
         .sponser {
             font-size: 15px;
         }
 
+        .sponserheader {
+            font-size: 30px;
+        }
+
         .sponser2 {
             font-size: 15px;
+        }
+
+        .ad1 {
+            font-size: 15px;
+            line-height: 30px;
+        }
+      
+        .ad2 {
+            font-size: 13px;
+            line-height: 25px;
+        }
+
+        .footer {
+            font-size: 13px;
+        }
+
+        .options {
+            font-size: 25px;
         }
   
     }

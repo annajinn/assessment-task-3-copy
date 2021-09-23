@@ -27,11 +27,27 @@
     --brown3 : #847564;
     --brown4 : #554939;
    }
+
+   @font-face {
+    font-family: font1;
+    src: url(JosefinSans-Light.ttf);
+}
+
+    @font-face {
+    font-family: font2;
+    src: url(BakerieSmooth-Regular.ttf);
+}
+
+    @font-face {
+    font-family: font3;
+    src: url(DailyChallenge.ttf);
+}
   
-    body {
+     body {
         background-color: var(--brown1);
         margin: 0px;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: font1;
+        font-weight: 600;
         line-height: 40px;
         font-size: larger;
         text-align: center;
@@ -71,7 +87,8 @@
         position: relative;
         padding-top: 25px;
         transition: transform 0.5s;
-  
+        font-family: font3;
+        font-size: 30px;
     }
   
     /* code for hovering over the index subpages */
@@ -106,6 +123,11 @@
         grid-area: body;
         padding: 8vw;
     }
+
+    .ourcookies h1 {
+        font-family: font3;
+        font-size: 60px;
+    }
   
     .ourcookies img {
         transition: transform 1s;
@@ -115,11 +137,23 @@
     .ourcookies img:hover {
         transform: scale(1.5);
     }
+
+    .ourcookies h2 {
+        margin-top: 45px;
+        font-family: font3;
+        font-weight: 300;
+    }
   
     .ingredients {
         grid-area: ingredients;
         list-style: circle;
         margin-bottom: 10vh;
+    }
+
+    .ingredients h5 {
+        font-family: font3;
+        font-size: 30px;
+        font-weight: 500;
     }
   
     .cookieb {
@@ -129,6 +163,12 @@
         padding-bottom: 70px;
         padding-top: 30px;
         background-color: var(--brown2);
+    }
+
+    .cookieb h5 {
+        font-family: font3;
+        font-weight: 300;
+        font-size: 25px;
     }
   
     .cookieb img {
@@ -160,6 +200,12 @@
     .cookie1 p {
         padding: 32px;
     }
+
+    .cookie1 h3 {
+        font-family: font3;
+        font-size: 45px;
+        font-weight: 500;
+    }
   
     .cookie2 {
         grid-area: cookie2;
@@ -172,6 +218,12 @@
   
     .cookie2 p {
         padding: 32px;
+    }
+
+    .cookie2 h3 {
+        font-family: font3;
+        font-size: 45px;
+        font-weight: 500;
     }
   
     .cookie3 {
@@ -186,6 +238,12 @@
     .cookie3 p {
         padding: 32px;
     }
+
+    .cookie3 h3 {
+        font-family: font3;
+        font-size: 45px;
+        font-weight: 500;
+    }
   
     .cookie4 {
         grid-area: cookie4;
@@ -198,6 +256,12 @@
   
     .cookie4 p {
         padding: 32px;
+    }
+
+    .cookie4 h3 {
+        font-family: font3;
+        font-size: 45px;
+        font-weight: 500;
     }
   
     .cookie5 {
@@ -212,6 +276,12 @@
     .cookie5 p {
         padding: 32px;
     }
+
+    .cookie5 h3 {
+        font-family: font3;
+        font-size: 45px;
+        font-weight: 500;
+    }
   
     .cookie6 {
         grid-area: cookie6;
@@ -224,6 +294,12 @@
   
     .cookie6 p {
         padding: 32px;
+    }
+
+    .cookie6 h3 {
+        font-family: font3;
+        font-size: 45px;
+        font-weight: 500;
     }
   
     .cookie7 {
@@ -238,11 +314,23 @@
     .cookie7 img {
         width: 70vw;
     }
+
+    .cookie7 h2 {
+        font-family: font3;
+        font-size: 50px;
+        font-weight: 700;
+    }
   
     .oreos {
         grid-area: oreos;
         padding: 5vw;
         list-style: circle;
+    }
+
+    .oreos h3 {
+        font-family: font3;
+        font-size: 50px;
+        font-weight: 400;
     }
   
     .oreos img {
@@ -257,6 +345,8 @@
     .sponserheader {
         grid-area: sponserheader;
         background-color: var(--brown2);
+        font-family: font3;
+        font-size: 40px;
     }
   
     .sponserimg {
@@ -304,7 +394,6 @@
 
 
     /* styling for the anna news sponsor */
-  
     .sponser2 {
         grid-area: sponser2;
         font-size: 20px;
@@ -333,15 +422,22 @@
         transform: scale(1.1);
     }
 
-    .sponser2 h4 {
-        transition: 0.8s;
+    .sponser2 h2{
+        font-family: font3;
+        font-size: 40px;
     }
 
-
+    .sponser2 h4 {
+        transition: 0.8s;
+        font-family: font3;
+        font-weight: 300;
+        font-size: 30px;
+    }
   
     .top {
         grid-area: up;
-        color: var(--brown3);
+        font-family: font3;
+        font-size: 30px;
         transition: 1s;
     }
   
@@ -349,9 +445,10 @@
         transform: scale(1.2);
     }
   
+    /* code for the footer section */
     .footer {
         grid-area: footer;
-        font-size: small;
+        font-size: 18px;
         line-height: 10px;
         margin-top: 50px;
     }
@@ -360,15 +457,16 @@
         grid-area: options;
         margin-top: 70px;
         margin-bottom: 30px;
-        font-size: small;
         line-height: 10px;
         display: flex;
         justify-content: space-evenly;
+        font-family: font3;
+        font-size: 30px;
+        font-weight: 300;
     }
   
     .copyright {
         grid-area: copyright;
-        font-size: small;
         line-height: 10px;
         margin-bottom: 20px;
     }
@@ -448,7 +546,9 @@
             transition: 0.5s;
             list-style: none;
             text-transform: uppercase;
-            font-size: 17px;
+            font-family: font3;
+            font-size: 25px;
+            font-weight: 400;
         }
   
         .myInd img {
@@ -480,7 +580,6 @@
             font-size: 15px;
             line-height: 35px;
         }
-  
   
         .ourcookies img {
             width: 150px;
@@ -514,10 +613,29 @@
             font-size: 15px;
         }
 
+        .sponserheader {
+            font-size: 30px;
+        }
+
         .sponser2 {
             font-size: 15px;
         }
 
+        .footer {
+            font-size: 13px;
+        }
+
+        .options {
+            font-size: 25px;
+        }
+
+        .top {
+            font-size: 20px;
+        }
+
+        .oreos h3 {
+            font-size: 40px;
+        }
   
     }
   

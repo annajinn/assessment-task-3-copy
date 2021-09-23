@@ -27,11 +27,27 @@
     --brown3 : #847564;
     --brown4 : #554939;
    }
+
+   @font-face {
+    font-family: font1;
+    src: url(JosefinSans-Light.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(BakerieSmooth-Regular.ttf);
+}
+
+@font-face {
+    font-family: font3;
+    src: url(DailyChallenge.ttf);
+}
   
     body {
         background-color: var(--brown1);
         margin: 0px;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: font1;
+        font-weight: 600;
         line-height: 40px;
         font-size: larger;
         text-align: center;
@@ -71,7 +87,8 @@
         position: relative;
         padding-top: 25px;
         transition: transform 0.5s;
-  
+        font-family: font3;
+        font-size: 30px;
     }
   
     /* code for hovering over the index subpages */
@@ -107,6 +124,11 @@
         margin-left: 10vw;
         margin-right: 10vw;
     }
+
+    .ourdrinks h1 {
+        font-family: font3;
+        font-size: 60px;
+    }
   
     .ourdrinks img {
         transition: transform 1s;
@@ -118,10 +140,22 @@
     .ourdrinks img:hover {
         transform: scale(1.3);
     }
+
+    .ourdrinks h2 {
+        margin-top: 45px;
+        font-family: font3;
+        font-weight: 300;
+    }
   
     .ingredients {
         grid-area: ingredients;
         list-style: circle;
+    }
+
+    .ingredients h5 {
+        font-family: font3;
+        font-size: 30px;
+        font-weight: 500;
     }
   
     .ingredients li {
@@ -137,6 +171,12 @@
         padding-bottom: 70px;
         padding-top: 30px;
         background-color: var(--brown2);
+    }
+
+    .drinkb h5 {
+        font-family: font3;
+        font-weight: 300;
+        font-size: 25px;
     }
   
     .drinkb img {
@@ -180,6 +220,9 @@
   
     .drink1 h3 {
         padding-top: 20px;
+        font-family: font3;
+        font-size: 45px;
+        font-weight: 500;
     }
   
   
@@ -207,6 +250,9 @@
   
     .drink2 h3 {
         padding-top: 20px;
+        font-family: font3;
+        font-size: 45px;
+        font-weight: 500;
     }
   
     .drink3 {
@@ -233,6 +279,9 @@
   
     .drink3 h3 {
         padding-top: 20px;
+        font-family: font3;
+        font-size: 45px;
+        font-weight: 500;
     }
   
     .drink4 {
@@ -259,6 +308,9 @@
   
     .drink4 h3 {
         padding-top: 20px;
+        font-family: font3;
+        font-size: 45px;
+        font-weight: 500;
     }
   
     .drink5 {
@@ -285,6 +337,9 @@
   
     .drink5 h3 {
         padding-top: 20px;
+        font-family: font3;
+        font-size: 45px;
+        font-weight: 500;
     }
   
     .drink6 {
@@ -311,6 +366,9 @@
   
     .drink6 h3 {
         padding-top: 20px;
+        font-family: font3;
+        font-size: 45px;
+        font-weight: 500;
     }
 
         /* styling for the sponsor */
@@ -318,6 +376,8 @@
     .sponserheader {
         grid-area: sponserheader;
         background-color: var(--brown2);
+        font-family: font3;
+        font-size: 40px;
     }
   
     .sponserimg {
@@ -363,13 +423,13 @@
         padding: 7vh;
     }
 
-  
+    /* this is styling for the ads */
     .ad1 {
         grid-area: ad1;
         border: var(--brown2);
         border-width: 2px;
         border-style: solid;
-        margin: 7vw;
+        margin: 4vw;
         font-size: 20px;
         line-height: 7vh;
         padding: 20px;
@@ -377,11 +437,19 @@
     }
   
     .ad1 img {
-        width: 25vw;
+        width: 15vw;
+        float: left;
+        margin: 2vw;
     }
   
     .ad1 p {
         padding: 3vw;
+    }
+
+    .ad1 h3 {
+        font-family: font2;
+        font-size: 25px;
+        line-height: 40px;
     }
   
     .ad2 {
@@ -389,7 +457,7 @@
         border: var(--brown2);
         border-width: 2px;
         border-style: solid;
-        margin: 7vw;
+        margin: 4vw;
         font-size: 20px;
         line-height: 7vh;
         padding: 20px;
@@ -397,13 +465,21 @@
     }
   
     .ad2 img {
-        width: 25vw;
+        width: 15vw;
+        float: left;
+        margin: 2vw;
     }
   
     .ad2 p {
         padding: 3vw;
+        padding-top: 1vw;
     }
 
+    .ad2 h3 {
+        font-family: font2;
+        font-size: 25px;
+        line-height: 40px;
+    }
 
     /* styling for the anna news sponsor */
   
@@ -435,16 +511,23 @@
         transform: scale(1.1);
     }
 
-    .sponser2 h4 {
-        transition: 0.8s;
+    .sponser2 h2{
+        font-family: font3;
+        font-size: 40px;
     }
 
-  
+    .sponser2 h4 {
+        transition: 0.8s;
+        font-family: font3;
+        font-weight: 300;
+        font-size: 30px;
+    }
   
     /* code for the back to top button */
     .top {
         grid-area: up;
-        color: var(--brown3);
+        font-family: font3;
+        font-size: 30px;
         transition: 1s;
         margin-top: 70px;
     }
@@ -453,10 +536,10 @@
         transform: scale(1.2);
     }
   
-    /* code for the footer of the page */
+    /* code for the footer section */
     .footer {
         grid-area: footer;
-        font-size: small;
+        font-size: 18px;
         line-height: 10px;
         margin-top: 50px;
     }
@@ -465,15 +548,16 @@
         grid-area: options;
         margin-top: 70px;
         margin-bottom: 30px;
-        font-size: small;
         line-height: 10px;
         display: flex;
         justify-content: space-evenly;
+        font-family: font3;
+        font-size: 30px;
+        font-weight: 300;
     }
   
     .copyright {
         grid-area: copyright;
-        font-size: small;
         line-height: 10px;
         margin-bottom: 20px;
     }
@@ -608,8 +692,20 @@
         font-size: 13px;
         line-height: 2vh;
     }
-  
+
+    .footer {
+        font-size: 13px;
     }
+
+    .options {
+        font-size: 25px;
+    }
+
+    .top {
+        font-size: 20px;
+    }
+  
+}
   
     @media (max-width: 800px) {
         .wrapper {
@@ -687,7 +783,9 @@
             transition: 0.5s;
             list-style: none;
             text-transform: uppercase;
-            font-size: 17px;
+            font-family: font3;
+            font-size: 25px;
+            font-weight: 400;
         }
   
         .myInd img {
@@ -796,8 +894,8 @@
     }
 
     .ad1 img {
-        float: left;
-        width: 20vw;
+        float: none;
+        width: 40vw;
         margin: 3vw;
     }
   
@@ -806,8 +904,8 @@
     }
 
     .ad2 img {
-        float: left;
-        width: 20vw;
+        float: none;
+        width: 40vw;
         margin: 3vw;
     }
 
@@ -815,8 +913,20 @@
         font-size: 15px;
     }
 
+    .sponserheader {
+        font-size: 30px;
+    }
+
     .sponser2 {
         font-size: 15px;
+    }
+
+    .footer {
+        font-size: 13px;
+    }
+
+    .options {
+        font-size: 25px;
     }
   
     }

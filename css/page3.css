@@ -4,6 +4,7 @@
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
     grid-template-areas:"nav"
                         "ourcontact"
+                        "hyper"
                         "contact"
                         "faq"
                         "q1"
@@ -39,11 +40,27 @@
     --brown5 : #decfc1;
     --brown6 : #a39586;
    }
+
+   @font-face {
+    font-family: font1;
+    src: url(JosefinSans-Light.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(BakerieSmooth-Regular.ttf);
+}
+
+@font-face {
+    font-family: font3;
+    src: url(DailyChallenge.ttf);
+}
   
     body {
         background-color: var(--brown1);
         margin: 0px;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: font1;
+        font-weight: 600;
         line-height: 40px;
         font-size: larger;
         text-align: center;
@@ -83,7 +100,8 @@
         position: relative;
         padding-top: 25px;
         transition: transform 0.5s;
-  
+        font-family: font3;
+        font-size: 30px;
     }
   
     /* code for hovering over the index subpages */
@@ -121,6 +139,27 @@
         padding-bottom: 5vh;
     }
 
+    .ourcontact h1 {
+        font-family: font3;
+        font-size: 60px;
+    }
+
+    .hyperlinks {
+        grid-area: hyper;
+        font-family: font3;
+        font-weight: 300;
+        font-size: 25px;
+        margin-bottom: 10vh;
+    }
+
+    .hyperlinks p {
+        transition: 0.7s;
+    }
+
+    .hyperlinks p:hover {
+        transform: scale(1.1);
+    }
+
     .contact nav {
         font-size: 15px;
         display: flex;
@@ -141,6 +180,11 @@
 
     .contact p1 {
         font-size: 2vw;
+    }
+
+    .contact h2 {
+        font-family: font3;
+        font-size: 40px;
     }
 
     .contact {
@@ -165,6 +209,11 @@
         border: 3px outset var(--brown3);
     }
 
+    .contact nav1 li h4 {
+        font-family: font3;
+        font-size: 30px;
+    }
+
     .contact nav1 li img {
         width: 14vw;
         border-radius: 10px;
@@ -185,8 +234,13 @@
         margin-top: 10vh;
     }
 
-    /* styling for all the faq questions and answers */
+    .faq h2 {
+        font-family: font3;
+        font-size: 50px;
+        letter-spacing: 8px;
+    }
 
+    /* styling for all the faq questions and answers */
     .q1 {
         grid-area: q1;
         width: 60vw;
@@ -197,11 +251,12 @@
         border-color: var(--brown3);
         border-width: thin;
         border-style: solid;
-        line-height: 5px;
         display: flex;
+        padding-bottom: 25px;
         flex-direction: row;
         justify-content: space-around;
         transition: 0.7s;
+        font-size: 20px;
     }
 
     .q1:hover {
@@ -247,11 +302,12 @@
         border-color: var(--brown3);
         border-width: thin;
         border-style: solid;
-        line-height: 5px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         transition: 0.7s;
+        padding-bottom: 25px;
+        font-size: 20px;
     }
 
     .q2:hover {
@@ -293,11 +349,12 @@
         border-color: var(--brown3);
         border-width: thin;
         border-style: solid;
-        line-height: 5px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         transition: 0.7s;
+        padding-bottom: 25px;
+        font-size: 20px;
     }
 
     .q3:hover {
@@ -340,11 +397,12 @@
         border-color: var(--brown3);
         border-width: thin;
         border-style: solid;
-        line-height: 5px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         transition: 0.7s;
+        padding-bottom: 25px;
+        font-size: 20px;
     }
 
     .q4:hover {
@@ -387,11 +445,12 @@
         border-color: var(--brown3);
         border-width: thin;
         border-style: solid;
-        line-height: 5px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         transition: 0.7s;
+        padding-bottom: 25px;
+        font-size: 20px;
     }
 
     .q5:hover {
@@ -429,6 +488,11 @@
         grid-area: openinghours;
         margin: 8vw;
         margin-bottom: 0;
+    }
+
+    .openinghours h2 {
+        font-family: font3;
+        font-size: 50px;
     }
 
     .hourstable {
@@ -478,6 +542,8 @@
     .sponserheader {
         grid-area: sponserheader;
         background-color: var(--brown2);
+        font-family: font3;
+        font-size: 40px;
     }
   
     .sponserimg {
@@ -532,6 +598,12 @@
         margin-bottom: 3vw;
     }
 
+    .delivery h3 {
+        font-family: font3;
+        font-size: 50px;
+        font-weight: 300;
+    }
+
     .deliverytable {
         grid-area: deliverytable;
         border-collapse: collapse;
@@ -576,7 +648,6 @@
 
 
     /* styling for the anna news sponsor */
-  
     .sponser2 {
         grid-area: sponser2;
         font-size: 20px;
@@ -605,14 +676,23 @@
         transform: scale(1.1);
     }
 
+    .sponser2 h2{
+        font-family: font3;
+        font-size: 40px;
+    }
+
     .sponser2 h4 {
         transition: 0.8s;
+        font-family: font3;
+        font-weight: 300;
+        font-size: 30px;
     }
   
     /* code for the back to top button */
     .top {
         grid-area: up;
-        color: var(--brown3);
+        font-family: font3;
+        font-size: 30px;
         transition: 1s;
         margin-bottom: 5vw;
     }
@@ -621,10 +701,10 @@
         transform: scale(1.2);
     }
   
-    /* code for the footer of the page */
+    /* code for the footer section */
     .footer {
         grid-area: footer;
-        font-size: small;
+        font-size: 18px;
         line-height: 10px;
         margin-top: 50px;
     }
@@ -633,17 +713,16 @@
         grid-area: options;
         margin-top: 70px;
         margin-bottom: 30px;
-        font-size: small;
         line-height: 10px;
         display: flex;
         justify-content: space-evenly;
+        font-family: font3;
+        font-size: 30px;
+        font-weight: 300;
     }
-
-    /* styling for the copyright section at the footer */
   
     .copyright {
         grid-area: copyright;
-        font-size: small;
         line-height: 10px;
         margin-bottom: 20px;
     }
@@ -698,7 +777,9 @@
             transition: 0.5s;
             list-style: none;
             text-transform: uppercase;
-            font-size: 17px;
+            font-family: font3;
+            font-size: 25px;
+            font-weight: 400;
         }
   
         .myInd img {
@@ -737,9 +818,18 @@
             font-size: 15px;
         }
 
+        .sponserheader {
+            font-size: 30px;
+        }
+
         .sponser2 {
             font-size: 15px;
         }
+
+        .delivery h3 {
+            font-size: 40px;
+        }
+
     }
 
     @media (max-width: 600px) {
@@ -749,6 +839,7 @@
             grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
             grid-template-areas:"nav"
                                 "ourcontact"
+                                "hyper"
                                 "contact"
                                 "faq"
                                 "q1"
@@ -793,5 +884,18 @@
             width: 30vw;
             margin-left: 5.5vw;
         }
+
+        .footer {
+            font-size: 13px;
+        }
+
+        .options {
+            font-size: 25px;
+        }
+
+        .top {
+            font-size: 20px;
+        }
+
     }
  
