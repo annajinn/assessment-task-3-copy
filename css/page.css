@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: auto auto auto auto auto auto auto;
-    grid-template-areas: "nav nav nav"
+    grid-template-areas:"nav nav nav"
                         "body body body"
                         "ingredients ingredients ingredients"
                         "cookieb cookieb cookieb"
